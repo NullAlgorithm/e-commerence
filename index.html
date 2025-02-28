@@ -1,0 +1,720 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <!-- how to make custom breakpoint -->
+  <!-- min-[400px]:bg-red-400 -->
+  <body>
+    <div id="size" class="fixed top-0 left-0"></div>
+    <div id="breakpoint" class="fixed top-5 left-0"></div>
+    <script>
+      const screenSize = window.innerWidth;
+      document.getElementById("size").innerHTML = screenSize;
+      if (screenSize >= 1536) {
+        document.getElementById("breakpoint").innerHTML = "2xl";
+      } else if (screenSize >= 1280) {
+        document.getElementById("breakpoint").innerHTML = "xl";
+      } else if (screenSize >= 1024) {
+        document.getElementById("breakpoint").innerHTML = "lg";
+      } else if (screenSize >= 768) {
+        document.getElementById("breakpoint").innerHTML = "md";
+      } else if (screenSize >= 640) {
+        document.getElementById("breakpoint").innerHTML = "sm";
+      } else {
+        document.getElementById("breakpoint").innerHTML = "base";
+      }
+    </script>
+    <br /><br />
+
+    <!-- top bar sign in -->
+    <!-- <div
+      class="text-white text-xl bg-black h-8 flex justify-center items-center"
+    >
+      <div class="flex text-[15px] justify-center align-middle">
+        <span>Sign up and get 20% off to your order.</span>
+        <a class="underline" href="Sing up now">Sign up now</a>
+      </div>
+    </div> -->
+    <!-- -----------niv bar --------->
+    <!-- <div class="flex flex-row mt-4 mb-6">
+      <div class="text-[30px] font-bold ml-16 cursor-pointer">SHOP.CO</div>
+      <div class="flex flex-row">
+        <button class="ml-4 mr-2 flex">
+          <div
+            class="flex justify-between w-24 h-[40px] rounded-4xl pl-[14px] items-center text-[18px] hover:bg-[#7b7b7b]"
+          >
+            Shop
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-9 pr-[18px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </button>
+
+        <button
+          class="mr-4 w-20 cursor-pointer rounded-4xl h-[40px] hover:bg-[#7b7b7b]"
+        >
+          On Sale
+        </button>
+        <button
+          class="mr-4 w-24 cursor-pointer rounded-4xl h-[40px] hover:bg-[#7b7b7b]"
+        >
+          New Arrive
+        </button>
+        <button
+          class="w-20 cursor-pointer rounded-4xl h-[40px] hover:bg-[#7b7b7b]"
+        >
+          Brands
+        </button>
+      </div> -->
+    <!-- ---search bar----- -->
+    <!-- <div class="ml-6 flex flex-row">
+        <div class="flex justify-center items-center">
+          <button
+            class="absolute left-[630px] cursor-pointer rounded-2xl p-[4px] hover:bg-[#7b7b7b]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </button>
+          <input
+            class="bg-[#f0f0f0] w-[500px] h-11 rounded-4xl border-none pl-12"
+            type="text"
+            placeholder="Search for product...."
+          />
+        </div>
+        <button class="ml-2 p-2 rounded-2xl hover:bg-[#7b7b7b]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart"
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+        </button>
+        <button class="ml-2 p-2 rounded-2xl hover:bg-[#7b7b7b]">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-user-round"
+          >
+            <path d="M18 20a6 6 0 0 0-12 0" />
+            <circle cx="12" cy="10" r="4" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </button>
+      </div>
+    </div> -->
+    <!-- main poster -->
+    <!-- <div class="pl-16 pt-14 flex bg-[#f2f0f1]">
+      <div>
+        <div class="flex flex-col w-90">
+          <span class="font-bold text-3xl"
+            >FIND CLOTHES THAT MATCHE YOUR STYLE</span
+          >
+          <span class="mt-6 text-[12px]"
+            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+            nam dignissimos aliquam expedita</span
+          >
+        </div>
+        <div class="mt-10 mb-8">
+          <button
+            class="w-39 border-2 border-[#0000001A] bg-black text-amber-50 rounded-3xl h-8"
+          >
+            Shop Now
+          </button>
+        </div>
+        <div class="flex mt-13">
+          <div class="flex flex-col border-r-2 border-[#878585] pr-2 mr-2">
+            <span class="font-bold text-2xl">200+</span>
+            <span class="text-[#878585]">International Brands</span>
+          </div>
+          <div class="flex flex-col border-r-2 border-[#878585] pr-2 mr-2">
+            <span class="font-bold text-2xl">2000+</span>
+            <span class="text-[#878585]">High Quality Products</span>
+          </div>
+          <div class="flex flex-col">
+            <span class="font-bold text-2xl">3000+</span>
+            <span class="text-[#878585]">Happy Customers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ml-47">
+        <img
+          class="w-[500px] h-[400px]"
+          src="images/main poster.jpg"
+          alt="poster"
+        />
+      </div>
+    </div> -->
+    <!-- brand names -->
+    <!-- <div>
+      <div class="h-20 bg-black flex flex-row items-center">
+        <img class="w-20% h-18 ml-20" src="images/VERSACE.png" alt="zara" />
+        <img
+          class="w-28 h-16 mr-29"
+          src="images/Calvin_Klein.png"
+          alt="versace"
+        />
+        <img class="w-22 h-6 mr-29" src="images/gucci.png" alt="gucci" />
+        <img class="w-28 h-25 mr-29" src="images/Prada.png" alt="Prada" />
+        <img class="w-22 h-14 mr-29" src="images/Zara.png" alt="zara" />
+      </div>
+    </div> -->
+    <!-- new arrival -->
+    <!-- <div class="border-b-2 border-b-[#0000001A] ml-16 mr-20">
+      <span class="flex justify-center text-4xl font-bold mt-8 mb-8"
+        >New Arrival</span
+      >
+      <div class="flex justify-center">
+        <div>
+          <img
+            class="w-63 h-68 shadow-2xl mr-10 rounded-2xl"
+            src="images/shirt.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w-63 h-68 shadow-2xl mr-10 rounded-2xl"
+            src="images/pants.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+        <div class="  ">
+          <img
+            class="w-63 h-68 shadow-2xl mr-10 rounded-2xl"
+            src="images/shirt2.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+        <div class="  ">
+          <img
+            class="w-63 h-68 shadow-2xl rounded-2xl"
+            src="images/shirt3.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8 mb-8">
+        <button class="w-33 border-2 border-[#0000001A] rounded-3xl h-10">
+          View ALL
+        </button>
+      </div>
+    </div> -->
+    <!-- top selling -->
+    <!-- <div class="mt-16 ml-16 mr-20">
+      <span class="flex justify-center text-4xl font-bold mb-8"
+        >Top Selling</span
+      >
+      <div class="flex justify-center">
+        <div class="   ">
+          <img
+            class="w-63 h-68 shadow-2xl mr-10 rounded-2xl"
+            src="images/shirt.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+        <div>
+          <img
+            class="w-63 h-68 shadow-2xl mr-10 rounded-2xl"
+            src="images/pants.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+        <div class="  ">
+          <img
+            class="w-63 h-68 shadow-2xl mr-10 rounded-2xl"
+            src="images/shirt2.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+        <div class="  ">
+          <img
+            class="w-63 h-68 shadow-2xl rounded-2xl"
+            src="images/shirt3.png"
+            alt="shirt"
+          />
+          <div class="flex flex-col">
+            <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
+            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span class="font-bold">$120</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex justify-center mt-8 mb-8">
+        <button class="w-33 border-2 border-[#0000001A] rounded-3xl h-10">
+          View ALL
+        </button>
+      </div>
+    </div> -->
+    <!--  Dre  Style-->
+    <!-- <div
+    class="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-teal-300"
+  >
+    <img
+      src="images/car.jpg"
+      alt="one day you'll be mine"
+      class="h-full w-full object-center object-contain"
+    />
+  </div> -->
+    <div
+      class="mx-2 rounded-2xl bg-[#0000001A] sm:mx-4 md:mx-8 lg:mr-20 lg:ml-16 lg:pb-8"
+    >
+      <span
+        class="mb-4 flex justify-center pt-4 text-3xl font-bold md:text-4xl lg:mb-8 lg:pt-8"
+        >Browse your style</span
+      >
+      <div class="flex flex-col items-center justify-center">
+        <div class="md:flex lg:flex">
+          <div
+            class="mb-4 h-[170px] w-[360px] sm:h-[50px] sm:w-[150px] md:mr-4 md:h-[200px] md:w-[280px] lg:relative lg:mr-4 lg:h-[200px] lg:w-[340px]"
+          >
+            <span
+              class="absolute mt-4 ml-3 font-bold md:text-[20px] lg:ml-50 lg:text-2xl"
+              >Casual</span
+            >
+            <img
+              class="h-full w-full rounded-2xl object-cover object-center"
+              src="images/casual.png"
+              alt=""
+            />
+          </div>
+
+          <div
+            class="relative h-[170px] w-[360px] sm:h-[80px] sm:w-[200px] md:h-[200px] md:w-[430px] lg:h-[200px] lg:w-[560px]"
+          >
+            <span
+              class="absolute ml-3 font-bold md:text-[20px] lg:mt-4 lg:ml-8 lg:text-2xl"
+              >Formal</span
+            >
+            <img
+              class="h-full w-full rounded-2xl object-cover object-center"
+              src="images/formal.png"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="md:flex lg:mt-2 lg:flex">
+          <div
+            class="relative mt-4 h-[170px] w-[360px] sm:h-[80px] sm:w-[200px] md:mr-4 md:h-[200px] md:w-[430px] lg:mr-4 lg:h-[200px] lg:w-[560px]"
+          >
+            <span
+              class="absolute ml-3 font-bold md:text-[20px] lg:mt-4 lg:ml-8 lg:text-2xl"
+              >Party</span
+            >
+            <img
+              class="h-full w-full rounded-2xl object-cover object-center"
+              src="images/girl.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="relative mt-4 mb-4 h-[170px] w-[360px] sm:h-[50px] sm:w-[150px] md:h-[200px] md:w-[280px] lg:h-[200px] lg:w-[340px]"
+          >
+            <span
+              class="absolute ml-3 font-bold md:text-[20px] lg:mt-4 lg:ml-2 lg:text-2xl"
+              >Casual</span
+            >
+            <img
+              class="h-full w-full rounded-2xl object-cover object-center"
+              src="images/gym.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- review -->
+    <!-- <div>
+      <div class="font-bold text-3xl mt-8 ml-16">OUR HAPPY CUSTOMERS</div>
+      <div class="flex flex-row justify-end mr-20">
+        <button class="mr-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-left"
+          >
+            <path d="M6 8L2 12L6 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-move-right"
+          >
+            <path d="M18 8L22 12L18 16" />
+            <path d="M2 12H22" />
+          </svg>
+        </button>
+      </div>
+      <div class="ml-16 flex">
+        <div class="border-2 w-[300px] border-[#0000001A] mr-4 rounded-2xl p-2">
+          <span>★★★☆☆</span>
+          <div class="flex flex-row items-center">
+            <span class="pr-1">Umer</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#14db50"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <p class="text-[12px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            elit. Earum pariatur nemo iste similique velit <br />
+            impedit deseruntmaxime repellat, <br />
+            deleniti ut accusamus
+          </p>
+        </div>
+        <div class="border-2 w-[300px] border-[#0000001A] mr-4 rounded-2xl p-2">
+          <span>★★★☆☆</span>
+          <div class="flex flex-row items-center">
+            <span class="pr-1">Umer</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#14db50"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <p class="text-[12px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            elit. Earum pariatur nemo iste similique velit <br />
+            impedit deseruntmaxime repellat, <br />
+            deleniti ut accusamus
+          </p>
+        </div>
+        <div class="border-2 w-[300px] border-[#0000001A] mr-4 rounded-2xl p-2">
+          <span>★★★☆☆</span>
+          <div class="flex flex-row items-center">
+            <span class="pr-1">Umer</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="#14db50"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-circle-check"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <path d="m9 12 2 2 4-4" />
+            </svg>
+          </div>
+          <p class="text-[12px]">
+            Lorem ipsum dolor sit amet consectetur adipisicing <br />
+            elit. Earum pariatur nemo iste similique velit <br />
+            impedit deseruntmaxime repellat, <br />
+            deleniti ut accusamus
+          </p>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- update -->
+    <!-- <div class="ml-16 mr-20 mt-20 border-2 rounded-2xl bg-black h-30 flex">
+      <div class="text-amber-50 text-3xl font-bold ml-10 mt-6 w-[400px]">
+        STAY UPTODATE ABOUT OUR LATEST OFFERS
+      </div>
+      <div class="flex flex-col ml-68 mt-6">
+        <div
+          class="flex justify-center items-center bg-amber-50 w-70 rounded-3xl mb-1.5 p-1"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-mail"
+          >
+            <rect width="20" height="16" x="2" y="4" rx="2" />
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+          </svg>
+          <span class="pl-2"> Enter your email address</span>
+        </div>
+        <div
+          class="flex justify-center items-center bg-amber-50 w-70 rounded-3xl p-1"
+        >
+          <span class=""> Subscribe for Newletter</span>
+        </div>
+      </div>
+    </div> -->
+    <!-- footer -->
+    <!-- <footer class="ml-16 mr-20 mt-9 border-b-4 border-[#0000001A]">
+      <div class="flex mb-12">
+        <div class="w-49">
+          <div class="font-bold text-2xl mb-2">Shop.cp</div>
+          <span class="text-[13px] text-[#878585]"
+            >we have the clotes that suits to your style andwhich you're proud
+            to wear.From men to women.</span
+          >
+          <div class="flex mt-6">
+            <div class="rounded-[50%] p-1 border-2 w-7 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0c0909"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-twitter"
+              >
+                <path
+                  d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"
+                />
+              </svg>
+            </div>
+            <div class="rounded-[50%] p-1 border-2 w-7 bg-black ml-2 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#ffffff"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-facebook"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                />
+              </svg>
+            </div>
+            <div class="rounded-[50%] p-1 border-2 w-7 ml-2 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0e0b0b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-instagram"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+              </svg>
+            </div>
+            <div class="rounded-[50%] p-1 border-2 w-7 ml-2 flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#0e0b0b"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-github"
+              >
+                <path
+                  d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                />
+                <path d="M9 18c-4.51 2-5-2-7-2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col ml-26">
+          <span class="font-bold mb-3">COMPANY</span>
+          <span class="text-[#878585] mb-2">About</span>
+          <span class="text-[#878585] mb-2">Feature</span>
+          <span class="text-[#878585] mb-2">Career</span>
+          <span class="text-[#878585] mb-2">Work</span>
+        </div>
+        <div class="flex flex-col ml-26">
+          <span class="font-bold mb-3">HELP</span>
+          <span class="text-[#878585] mb-2">Customer Support</span>
+          <span class="text-[#878585] mb-2">Delivery Date</span>
+          <span class="text-[#878585] mb-2">Term & Condition</span>
+          <span class="text-[#878585] mb-2">Privacy Policy</span>
+        </div>
+        <div class="flex flex-col ml-26">
+          <span class="font-bold mb-3">FAQs</span>
+          <span class="text-[#878585] mb-2">Account</span>
+          <span class="text-[#878585] mb-2">Manage Deliveries</span>
+          <span class="text-[#878585] mb-2">Payment</span>
+          <span class="text-[#878585] mb-2">Orders</span>
+        </div>
+        <div class="flex flex-col ml-26">
+          <span class="font-bold mb-3">Resources</span>
+          <span class="text-[#878585] mb-2">Free eBook</span>
+          <span class="text-[#878585] mb-2">Department Toturial</span>
+          <span class="text-[#878585] mb-2">How to Blog</span>
+          <span class="text-[#878585] mb-2">Youtube Playist</span>
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- below footer -->
+    <!-- <div class="flex">
+      <div class="ml-20 mr-20 mt-2 mb-8">
+        <span class="text-[#878585]"> All Right to NullAlogrithum </span>
+      </div>
+      <div class="flex mt-2 absolute right-16">
+        <img class="w-10 h-10 mr-3" src="images/visa.png" alt="visa" />
+        <img class="w-10 h-10 mr-3" src="images/union.png" alt="union" />
+        <img class="w-10 h-10 mr-3" src="images/jazz.png" alt="jazzcash" />
+        <img class="w-10 h-10 mr-3" src="images/master.png" alt="master card" />
+      </div>
+    </div>
+
+
+test
+     To fit image in a box completely, img don't stretch, cropped if necessary 
+
+    <div
+      class="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-teal-300"
+    >
+      <img
+        src="images/car.jpg"
+        alt="one day you'll be mine"
+        class="h-full w-full object-center object-cover"
+      />
+    </div>
+     To contain image in a box, img don't stretch, img become small if necessary 
+
+    <div
+      class="w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] bg-teal-300"
+    >
+      <img
+        src="images/car.jpg"
+        alt="one day you'll be mine"
+        class="h-full w-full object-center object-contain"
+      />
+    </div> -->
+  </body>
+</html>
