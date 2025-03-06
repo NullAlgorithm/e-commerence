@@ -43,9 +43,24 @@
 
     <!--------------- -----------niv bar --------->
 
-    <div class="mt-4 mb-6 flex flex-row">
-      <div class="ml-16 cursor-pointer text-[30px] font-bold">SHOP.CO</div>
-      <div class="flex flex-row">
+    <div class="mt-4 mb-6 flex   flex-row items-center lg:justify-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-8 mr-4 ml-6 lg:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <div class=" cursor-pointer text-[30px] font-bold">SHOP.CO</div>
+      <div class="lg:flex lg:flex-row hidden">
         <button class="mr-2 ml-4 flex">
           <div
             class="flex h-[40px] w-24 items-center justify-between rounded-4xl pl-[14px] text-[18px] hover:bg-[#7b7b7b]"
@@ -87,10 +102,10 @@
 
       <!-- ---search bar----- -->
 
-      <div class="ml-6 flex flex-row">
+      <div class="lg:ml-6 flex  flex-row md:justify-center ml-40 sm:ml-90 md:ml-8 ">
         <div class="flex justify-center items-center ">
           <button
-            class="absolute left-[630px] cursor-pointer rounded-2xl p-[4px] hover:bg-[#7b7b7b]"
+            class="absolute lg:left-[630px] md:left-[240px] cursor-pointer rounded-2xl p-[4px] hover:bg-[#7b7b7b]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,19 +117,19 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-search"
+              class="lucide lucide-search   md:size-5 "
             >
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
             </svg>
           </button>
           <input
-            class="bg-[#f0f0f0] w-[500px] h-11 rounded-4xl border-none pl-12"
+            class="bg-[#f0f0f0] lg:w-[500px] md:w-[500px] md:h-7 lg:h-11 rounded-4xl border-none pl-12 hidden md:block "
             type="text"
             placeholder="Search for product...."
           />
         </div>
-        <button class="ml-2 p-2 rounded-2xl hover:bg-[#7b7b7b]">
+        <button class="ml-4 md:ml-2 p-2 rounded-2xl hover:bg-[#7b7b7b]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -125,7 +140,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-shopping-cart"
+            class="lucide lucide-shopping-cart "
           >
             <circle cx="8" cy="21" r="1" />
             <circle cx="19" cy="21" r="1" />
@@ -134,7 +149,7 @@
             />
           </svg>
         </button>
-        <button class="ml-2 p-2 rounded-2xl hover:bg-[#7b7b7b]">
+        <button class="md:ml-2 p-2 rounded-2xl hover:bg-[#7b7b7b]">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -202,20 +217,6 @@
 
       <!------------------- brand names -->
 
-      <!-- <div class="">
-      <div class="h-30 px-10 flex flex-wrap lg:h-20 bg-black lg:flex lg:flex-row items-center">
-        <img class="w-30 md:w-20% md:h-18 mr-4 md:ml-20" src="images/VERSACE.png" alt="zara" />
-        <img
-          class="md:w-28 md:h-16 h-15 md:mr-29"
-          src="images/Calvin_Klein.png"
-          alt="versace"
-        />
-        <img class="md:w-:22 md:h-6 h-5 md:mr-29" src="images/gucci.png" alt="gucci" />
-        <img class="md:w-28 md:h-25 h-5 md:mr-29" src="images/Prada.png" alt="Prada" />
-        <img class="md:w-22 md:h-14 h-5 md:mr-29" src="images/Zara.png" alt="zara" />
-      </div>
-    </div> -->
-
       <!-- ---------------------------------------------------------------- -->
       <!-- Brands line black -->
 
@@ -244,7 +245,7 @@
           />
           <div class="flex flex-col">
             <span class="text-[15px] mt-2">T-SHIRT WITH TAPE DETAILS</span>
-            <span>★★★☆☆ <span class="text-[10px]">4/5</span> </span>
+            <span>★★★★☆ <span class="text-[10px]">4/5</span> </span>
             <span class="font-bold">$120</span>
           </div>
         </div>
@@ -294,9 +295,8 @@
           View ALL
         </button>
       </div>
-    </div>
-    
-     -->
+    </div> -->
+
       <!----------------------- top selling -->
 
       <!-- <div class="mt-16 mx-6  lg:ml-20 lg:mr-20">
