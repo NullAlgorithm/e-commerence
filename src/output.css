@@ -850,6 +850,10 @@
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
+  .border-6 {
+    border-style: var(--tw-border-style);
+    border-width: 6px;
+  }
   .border-r-2 {
     border-right-style: var(--tw-border-style);
     border-right-width: 2px;
@@ -871,6 +875,9 @@
   }
   .border-\[\#878585\] {
     border-color: #878585;
+  }
+  .border-black {
+    border-color: var(--color-black);
   }
   .border-b-\[\#0000001A\] {
     border-bottom-color: #0000001A;
@@ -1403,6 +1410,17 @@
       justify-content: normal;
     }
   }
+  .md\:border-2 {
+    @media (width >= 48rem) {
+      border-style: var(--tw-border-style);
+      border-width: 2px;
+    }
+  }
+  .md\:border-black {
+    @media (width >= 48rem) {
+      border-color: var(--color-black);
+    }
+  }
   .md\:p-2 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 2);
@@ -1417,6 +1435,12 @@
   .md\:text-\[20px\] {
     @media (width >= 48rem) {
       font-size: 20px;
+    }
+  }
+  .md\:shadow-2xl {
+    @media (width >= 48rem) {
+      --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
+      box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     }
   }
   .lg\:absolute {
