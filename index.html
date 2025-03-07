@@ -43,14 +43,14 @@
 
     <!--------------- -----------niv bar --------->
 
-    <div class="mt-4 mb-6 flex   flex-row items-center lg:justify-center">
+    <div class="mt-4 mb-6 flex  flex-row items-center lg:justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-8 mr-4 ml-6 lg:hidden"
+        class="size-8 mr-4 ml-4 lg:hidden"
       >
         <path
           stroke-linecap="round"
@@ -102,10 +102,10 @@
 
       <!-- ---search bar----- -->
 
-      <div class="lg:ml-6 flex  flex-row md:justify-center ml-40 sm:ml-90 md:ml-8 ">
-        <div class="flex justify-center items-center ">
+      <div class="lg:ml-6 flex  flex-row md:justify-center ml-24 sm:ml-90 md:ml-8 ">
+        <div class="flex justify-center  items-center shadow-2xl ">
           <button
-            class="absolute lg:left-[630px] md:left-[240px] cursor-pointer rounded-2xl p-[4px] hover:bg-[#7b7b7b]"
+            class="absolute lg:left-[650px] md:left-[240px]  cursor-pointer rounded-2xl p-[4px] hover:bg-[#7b7b7b]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -117,14 +117,14 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-search   md:size-5 "
+              class="lucide lucide-search   md:size-5 lg:size-7 "
             >
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
             </svg>
           </button>
           <input
-            class="bg-[#f0f0f0] lg:w-[500px] md:w-[500px] md:h-7 lg:h-11 rounded-4xl border-none pl-12 hidden md:block  "
+            class="bg-[#f0f0f0] lg:w-[580px]  md:w-[500px] md:h-7 lg:h-11 rounded-4xl border-solid border-2  pl-12 hidden md:block  "
             type="text"
             placeholder="Search for product...."
           />
@@ -172,34 +172,34 @@
 
       <!------------------------ main poster -->
 
-      <div class="lg:pl-20 px-6 pt-14 flex flex-col  md:flex-row lg:flex-row bg-[#f2f0f1]">
+      <div class="lg:pl-20 px-6 pt-4 lg:pt-14 flex flex-col  md:flex-row lg:flex-row bg-[#f2f0f1]">
       <div class=" ">
-        <div class="flex flex-col w-[450px]  ">
-          <span class="font-extrabold text-5xl"
+        <div class="flex flex-col lg:w-[450px]  ">
+          <span class="font-extrabold text-4xl lg:text-5xl"
             >FIND CLOTHES THAT MATCHE YOUR STYLE</span
           >
-          <span class="mt-6 text-[20px]"
-            >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti
+          <span class="mt-6 text-[20px] w-fit"
+            >Lorem ipsum dolor, sit amet consectetur 
             nam dignissimos aliquam expedita</span
           >
         </div>
         <div class="mt-10 mb-8 ">
           <button
-            class=" w-[480px] sm:w-[595px]  md:w-44 lg:w-44 border-2 border-[#0000001A] bg-black text-amber-50 rounded-4xl h-12"
+            class=" sm:w-[595px] w-full  md:w-44 lg:w-44 border-2 border-[#0000001A] bg-black text-amber-50 rounded-4xl h-12"
           >
             Shop Now
           </button>
         </div>
         <div class="flex flex-wrap justify-center md:justify-normal sm:flex-nowrap items-center mt-13">
-          <div class="flex flex-col border-r-2 border-[#878585] pr-15   sm:pr-4 sm:mr-4 lg:pr-4 lg:mr-4">
+          <div class="flex flex-col border-r-2 border-[#878585] pr-3  sm:pr-4 sm:mr-4 lg:pr-4 lg:mr-4">
             <span class="font-semibold text-4xl">200+</span>
             <span class="text-[#878585]">International Brands</span>
           </div>
-          <div class="flex flex-col lg:border-r-2 sm:border-r-2 border-[#878585]   ml-12 sm:pr-4 sm:mr-4 lg:pr-4 lg:mr-4">
+          <div class="flex flex-col lg:border-r-2 sm:border-r-2 border-[#878585]   ml-3 sm:pr-4 sm:mr-4 lg:pr-4 lg:mr-4">
             <span class="font-semibold text-4xl">2000+</span>
             <span class="text-[#878585]">High Quality Products</span>
           </div>
-          <div class="flex flex-col mt-7 sm:mt-0">
+          <div class="flex flex-col mt-7 ml-2 5 sm:mt-0">
             <span class="font-semibold text-4xl">3000+</span>
             <span class="text-[#878585]">Happy Customers</span>
           </div>
@@ -208,7 +208,7 @@
 
       <div class="pl-6 lg:ml-47">
         <img
-          class="overflow-hidden h-screen"
+          class="overflow-hidden h-full w-full object-center object-cover"
           src="images/main poster.jpg"
           alt="poster"
         />
@@ -369,10 +369,10 @@
         class="mb-4 flex justify-center pt-4 text-3xl font-bold md:text-4xl lg:mb-8 lg:pt-8"
         >Browse your style</span
       >
-      <div class="flex flex-col items-center justify-center">
+      <div class="flex  flex-col items-center justify-center">
         <div class="sm:flex md:flex lg:flex">
           <div
-            class="mb-4 h-[170px] w-[360px] sm:mr-3 sm:h-[170px] sm:w-[240px] md:mr-4 md:h-[200px] md:w-[280px] lg:relative lg:mr-4 lg:h-[200px] lg:w-[340px]"
+            class="mb-4 h-[170px] w-[340px] mx-2 sm:mr-3 sm:h-[170px] sm:w-[240px] md:mr-4 md:h-[200px] md:w-[280px] lg:relative lg:mr-4 lg:h-[200px] lg:w-[340px]"
           >
             <span
               class="absolute mt-4 ml-3 font-bold md:text-[20px] lg:ml-50 lg:text-2xl"
@@ -386,7 +386,7 @@
           </div>
 
           <div
-            class="relative h-[170px] w-[360px] sm:h-[170px] sm:w-[400px] md:h-[200px] md:w-[430px] lg:h-[200px] lg:w-[560px]"
+            class="relative h-[170px] w-[340px] mx-2  sm:h-[170px] sm:w-[400px] md:h-[200px] md:w-[430px] lg:h-[200px] lg:w-[560px]"
           >
             <span
               class="absolute ml-3 font-bold md:text-[20px] lg:mt-4 lg:ml-8 lg:text-2xl"
@@ -401,7 +401,7 @@
         </div>
         <div class="sm:flex md:flex lg:flex">
           <div
-            class="relative mt-4 h-[170px] w-[360px] sm:mt-0 sm:mr-3 sm:h-[170px] sm:w-[400px] md:mr-4 md:h-[200px] md:w-[430px] lg:mt-1.5 lg:mr-4 lg:h-[200px] lg:w-[560px]"
+            class="relative mt-4 h-[170px] w-[340px] mx-2 sm:mt-0 sm:mr-3 sm:h-[170px] sm:w-[400px] md:mr-4 md:h-[200px] md:w-[430px] lg:mt-1.5 lg:mr-4 lg:h-[200px] lg:w-[560px]"
           >
             <span
               class="absolute ml-3 font-bold md:text-[20px] lg:mt-4 lg:ml-8 lg:text-2xl"
@@ -414,7 +414,7 @@
             />
           </div>
           <div
-            class="relative mt-4 mb-4 h-[170px] w-[360px] sm:mt-0 sm:h-[170px] sm:w-[240px] md:h-[200px] md:w-[280px] lg:mt-1.5 lg:h-[200px] lg:w-[340px]"
+            class="relative mt-4 mb-4 h-[170px] w-[340px] mx-2 sm:mt-0 sm:h-[170px] sm:w-[240px] md:h-[200px] md:w-[280px] lg:mt-1.5 lg:h-[200px] lg:w-[340px]"
           >
             <span
               class="absolute ml-3 font-bold md:text-[20px] lg:mt-4 lg:ml-2 lg:text-2xl"
@@ -432,14 +432,14 @@
 
       <!--------------- review------------ -->
       
-    <div>
+    <div class="relative mt-10">
       <div
-        class="ml-6 w-60 text-3xl font-extrabold md:mt-8 md:ml-16 md:w-[390px] lg:mt-8 lg:ml-20"
+        class=" ml-6 mb-6 w-60 text-3xl font-extrabold md:mt-8 md:ml-16 md:w-[390px] lg:mt-8 lg:ml-20"
       >
         OUR HAPPY CUSTOMERS
       </div>
       <div
-        class="absolute top-23 left-[330px] mr-20 flex flex-row justify-end sm:absolute sm:top-22 sm:left-[618px] sm:w-20 md:absolute md:top-28 md:left-[818px] md:w-20 lg:absolute lg:top-28 lg:left-[999px] lg:w-20"
+        class="absolute top-13 left-[295px] mr-20 flex flex-row justify-end sm:absolute sm:top-22 sm:left-[618px] sm:w-20 md:absolute md:top-28 md:left-[818px] md:w-20 lg:absolute lg:top-28 lg:left-[999px] lg:w-20"
       >
         <button class="mr-4">
           <svg
@@ -477,37 +477,9 @@
         </button>
       </div>
       <div
-        class="mt-2 ml-6 flex flex-wrap sm:mt-4 sm:flex-wrap md:mt-10 md:ml-16 md:flex-nowrap lg:ml-16"
+        class="mt-2 mx-6 flex flex-wrap sm:mt-4 sm:flex-wrap md:mt-10 md:ml-16 md:flex-nowrap lg:ml-16"
       >
-        <div
-          class="mb-4 w-[393px] rounded-2xl border-2 border-[#0000001A] p-2 sm:mr-2 sm:w-[340px] md:mr-4 md:w-[340px] lg:mr-4 lg:w-[340px]"
-        >
-          <span class="sm:text-2xl lg:text-2xl">★★★☆☆</span>
-          <div class="flex flex-row items-center">
-            <span class="pr-1 font-bold">Umer</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#14db50"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-circle-check"
-            >
-              <circle cx="12" cy="12" r="10" />
-              <path d="m9 12 2 2 4-4" />
-            </svg>
-          </div>
-          <p class="text-[12px] sm:text-[14px] lg:text-[14px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing <br />
-            elit. Earum pariatur nemo iste similique velit <br />
-            impedit deseruntmaxime repellat, <br />
-            deleniti ut accusamus
-          </p>
-        </div>
+      
         <div
           class="mb-4 w-[393px] rounded-2xl border-2 border-[#0000001A] p-2 sm:mr-2 sm:w-[340px] md:mr-4 md:w-[340px] lg:mr-4 lg:w-[340px]"
         >
@@ -601,7 +573,7 @@
       <!--------------- update -->
 
       <div
-      class="mx-6 mt-20 flex-wrap items-center justify-between rounded-2xl border-2 bg-black lg:mr-20 lg:ml-20 lg:flex lg:h-30 lg:flex-col"
+      class="mx-6 mt-20 flex-wrap items-center justify-around rounded-2xl border-2 bg-black lg:mr-20 lg:ml-20 lg:flex lg:h-30 lg:flex-col"
     >
       <div
         class="mt-6 mr-4 ml-6 h-fit text-3xl font-bold text-amber-50 lg:ml-10 lg:w-[400px]"
@@ -610,7 +582,7 @@
       </div>
       <div class="mt-6 mb-4 flex flex-col lg:mt-4 lg:mb-4 lg:w-90">
         <div
-          class="mx-15 mb-1.5 flex items-center justify-center rounded-3xl bg-amber-50 p-2 lg:w-70"
+          class="mx-15 mb-1.5  flex items-center justify-center rounded-3xl bg-amber-50 p-2 lg:w-70"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -641,7 +613,7 @@
       <!---------------- footer -->
 
       <footer class="mx-6 mt-9 border-b-4 border-[#0000001A] lg:mr-20 lg:ml-20">
-      <div class="mb-12 flex flex-wrap sm:flex-wrap md:flex-nowrap lg:flex">
+      <div class="mb-12 flex flex-row flex-wrap sm:flex-wrap md:flex-nowrap lg:flex">
         <div class="lg:w-49">
           <div class="mb-2 text-2xl font-bold">Shop.cp</div>
           <span class="text-[13px] text-[#878585]"
@@ -724,6 +696,7 @@
             </div>
           </div>
         </div>
+       <div class="grid grid-cols-2 lg:flex ">
         <div class="mt-4 flex w-60 flex-col sm:w-40 lg:ml-26">
           <span class="mb-3 font-bold">COMPANY</span>
           <span class="mb-2 text-[#878585]">About</span>
@@ -752,6 +725,7 @@
           <span class="mb-2 text-[#878585]">How to Blog</span>
           <span class="mb-2 text-[#878585]">Youtube Playist</span>
         </div>
+       </div>
       </div>
     </footer>
 
@@ -790,7 +764,41 @@
         src="images/car.jpg"
         alt="one day you'll be mine"
         class="h-full w-full object-center object-contain"
+
+        review    
+
+        <div
+      class="mb-4 w-[393px] rounded-2xl border-2 border-[#0000001A] p-2 sm:mr-2 sm:w-[340px] md:mr-4 md:w-[340px] lg:mr-4 lg:w-[340px]"
+    >
+      <span class="sm:text-2xl lg:text-2xl">★★★☆☆</span>
+      <div class="flex flex-row items-center">
+        <span class="pr-1 font-bold">Umer</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="18"
+          height="18"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="#14db50"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-circle-check"
+        >
+          <circle cx="12" cy="12" r="10" />
+          <path d="m9 12 2 2 4-4" />
+        </svg>
+      </div>
+      <p class="text-[12px] sm:text-[14px] lg:text-[14px]">
+        Lorem ipsum dolor sit amet consectetur adipisicing <br />
+        elit. Earum pariatur nemo iste similique velit <br />
+        impedit deseruntmaxime repellat, <br />
+        deleniti ut accusamus
+      </p>
+    </div> 
+
       /> -->
     </div>
   </body>
 </html>
+
