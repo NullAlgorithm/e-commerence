@@ -702,6 +702,9 @@
     width: calc(var(--spacing) * 10);
     height: calc(var(--spacing) * 10);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -734,6 +737,9 @@
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
+  }
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -840,6 +846,9 @@
   .rounded-\[4px\] {
     border-radius: 4px;
   }
+  .rounded-\[50\%\] {
+    border-radius: 50%;
+  }
   .rounded-\[5px\] {
     border-radius: 5px;
   }
@@ -851,9 +860,6 @@
   }
   .rounded-\[10px\] {
     border-radius: 10px;
-  }
-  .rounded-\[50\%\] {
-    border-radius: 50%;
   }
   .rounded-\[5100\%\] {
     border-radius: 5100%;

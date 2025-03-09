@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+<body>
+     <!-- how to make custom breakpoint -->
+  <!-- min-[400px]:bg-red-400 -->
+  <body>
+    <div id="size" class="fixed top-0 left-0"></div>
+    <div id="breakpoint" class="fixed top-5 left-0"></div>
+    <script>
+      const screenSize = window.innerWidth;
+      document.getElementById("size").innerHTML = screenSize;
+      if (screenSize >= 1536) {
+        document.getElementById("breakpoint").innerHTML = "2xl";
+      } else if (screenSize >= 1280) {
+        document.getElementById("breakpoint").innerHTML = "xl";
+      } else if (screenSize >= 1024) {
+        document.getElementById("breakpoint").innerHTML = "lg";
+      } else if (screenSize >= 768) {
+        document.getElementById("breakpoint").innerHTML = "md";
+      } else if (screenSize >= 640) {
+        document.getElementById("breakpoint").innerHTML = "sm";
+      } else {
+        document.getElementById("breakpoint").innerHTML = "base";
+      }
+    </script>
+    <br /><br />
+
+    <!------------------ top bar sign in -->
+
+    <div
+      class="text-white text-xl bg-black h-8 flex justify-center items-center"
+    >
+      <div class="flex text-[15px] justify-center align-middle">
+        <span>Sign up and get 20% off to your order.</span>
+        <a class="underline" href="Sing up now">Sign up now</a>
+      </div>
+    </div>
+
+    <!--------------- -----------niv bar --------->
+
+    <div class="mt-4 mb-6 flex  flex-row items-center lg:justify-center">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="size-8 mr-4 ml-4 lg:hidden"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+        />
+      </svg>
+
+      <div class=" cursor-pointer text-[30px] font-bold">SHOP.CO</div>
+      <div class="lg:flex lg:flex-row hidden">
+        <button class="mr-2 ml-4 flex cursor-pointer">
+          <div
+            class="flex h-[40px] w-24 items-center justify-between rounded-4xl pl-[14px] text-[18px] hover:bg-gray-200"
+          >
+            Shop
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-9 pr-[18px]"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </div>
+        </button>
+
+        <button
+          class="mr-4 h-[40px] w-20 cursor-pointer rounded-4xl hover:bg-gray-200"
+        >
+          On Sale
+        </button>
+        <button
+          class="mr-4 h-[40px] w-24 cursor-pointer rounded-4xl hover:bg-gray-200"
+        >
+          New Arrive
+        </button>
+        <button
+          class="h-[40px] w-20 cursor-pointer rounded-4xl hover:bg-gray-200"
+        >
+          Brands
+        </button>
+      </div>
+
+      <!-- ---search bar----- -->
+
+      <div class="lg:ml-6 flex  flex-row md:justify-center ml-24 sm:ml-90 md:ml-8 ">
+        <div class="flex justify-center  items-center shadow-2xl ">
+          <button
+            class="absolute lg:left-[650px] md:left-[240px]  cursor-pointer rounded-2xl p-[4px] hover:bg-gray-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="lucide lucide-search   md:size-5 lg:size-7 "
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.3-4.3" />
+            </svg>
+          </button>
+          <input
+            class="bg-[#f0f0f0] lg:w-[580px]  md:w-[500px] md:h-7 lg:h-11 rounded-4xl border-solid border-2  pl-12 hidden md:block  "
+            type="text"
+            placeholder="Search for product...."
+          />
+        </div>
+        <button class="ml-4 md:ml-2 p-2 rounded-2xl cursor-pointer hover:bg-gray-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-shopping-cart "
+          >
+            <circle cx="8" cy="21" r="1" />
+            <circle cx="19" cy="21" r="1" />
+            <path
+              d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+            />
+          </svg>
+        </button>
+        <button class="md:ml-2 p-2 rounded-2xl cursor-pointer hover:bg-gray-200">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-circle-user-round"
+          >
+            <path d="M18 20a6 6 0 0 0-12 0" />
+            <circle cx="12" cy="10" r="4" />
+            <circle cx="12" cy="12" r="10" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- ------------------------------- -->
+    
+</body>
+</html>
