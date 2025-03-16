@@ -1020,34 +1020,9 @@
       top: calc(var(--spacing) * 12);
     }
   }
-  .sm\:top-22 {
-    @media (width >= 40rem) {
-      top: calc(var(--spacing) * 22);
-    }
-  }
-  .sm\:left-\[450px\] {
-    @media (width >= 40rem) {
-      left: 450px;
-    }
-  }
   .sm\:left-\[500px\] {
     @media (width >= 40rem) {
       left: 500px;
-    }
-  }
-  .sm\:left-\[550px\] {
-    @media (width >= 40rem) {
-      left: 550px;
-    }
-  }
-  .sm\:left-\[600px\] {
-    @media (width >= 40rem) {
-      left: 600px;
-    }
-  }
-  .sm\:left-\[618px\] {
-    @media (width >= 40rem) {
-      left: 618px;
     }
   }
   .sm\:mx-4 {
@@ -1063,16 +1038,6 @@
   .sm\:mt-4 {
     @media (width >= 40rem) {
       margin-top: calc(var(--spacing) * 4);
-    }
-  }
-  .sm\:mt-6 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 6);
-    }
-  }
-  .sm\:mt-10 {
-    @media (width >= 40rem) {
-      margin-top: calc(var(--spacing) * 10);
     }
   }
   .sm\:mr-2 {
@@ -1120,29 +1085,9 @@
       width: calc(var(--spacing) * 40);
     }
   }
-  .sm\:w-\[120px\] {
-    @media (width >= 40rem) {
-      width: 120px;
-    }
-  }
-  .sm\:w-\[180px\] {
-    @media (width >= 40rem) {
-      width: 180px;
-    }
-  }
-  .sm\:w-\[200px\] {
-    @media (width >= 40rem) {
-      width: 200px;
-    }
-  }
   .sm\:w-\[220px\] {
     @media (width >= 40rem) {
       width: 220px;
-    }
-  }
-  .sm\:w-\[240px\] {
-    @media (width >= 40rem) {
-      width: 240px;
     }
   }
   .sm\:w-\[300px\] {
@@ -1150,24 +1095,9 @@
       width: 300px;
     }
   }
-  .sm\:w-\[320px\] {
-    @media (width >= 40rem) {
-      width: 320px;
-    }
-  }
   .sm\:w-\[340px\] {
     @media (width >= 40rem) {
       width: 340px;
-    }
-  }
-  .sm\:w-\[350px\] {
-    @media (width >= 40rem) {
-      width: 350px;
-    }
-  }
-  .sm\:w-\[400px\] {
-    @media (width >= 40rem) {
-      width: 400px;
     }
   }
   .sm\:w-\[595px\] {
@@ -1222,74 +1152,14 @@
       top: calc(var(--spacing) * 8);
     }
   }
-  .md\:top-10 {
-    @media (width >= 48rem) {
-      top: calc(var(--spacing) * 10);
-    }
-  }
-  .md\:top-12 {
-    @media (width >= 48rem) {
-      top: calc(var(--spacing) * 12);
-    }
-  }
-  .md\:top-15 {
-    @media (width >= 48rem) {
-      top: calc(var(--spacing) * 15);
-    }
-  }
-  .md\:top-28 {
-    @media (width >= 48rem) {
-      top: calc(var(--spacing) * 28);
-    }
-  }
-  .md\:left-\[200px\] {
-    @media (width >= 48rem) {
-      left: 200px;
-    }
-  }
-  .md\:left-\[220px\] {
-    @media (width >= 48rem) {
-      left: 220px;
-    }
-  }
   .md\:left-\[230px\] {
     @media (width >= 48rem) {
       left: 230px;
     }
   }
-  .md\:left-\[240px\] {
-    @media (width >= 48rem) {
-      left: 240px;
-    }
-  }
-  .md\:left-\[580px\] {
-    @media (width >= 48rem) {
-      left: 580px;
-    }
-  }
-  .md\:left-\[650px\] {
-    @media (width >= 48rem) {
-      left: 650px;
-    }
-  }
-  .md\:left-\[680px\] {
-    @media (width >= 48rem) {
-      left: 680px;
-    }
-  }
-  .md\:left-\[700px\] {
-    @media (width >= 48rem) {
-      left: 700px;
-    }
-  }
   .md\:left-\[720px\] {
     @media (width >= 48rem) {
       left: 720px;
-    }
-  }
-  .md\:left-\[818px\] {
-    @media (width >= 48rem) {
-      left: 818px;
     }
   }
   .md\:mx-8 {
@@ -1464,34 +1334,14 @@
       right: calc(var(--spacing) * 16);
     }
   }
-  .lg\:left-210 {
-    @media (width >= 64rem) {
-      left: calc(var(--spacing) * 210);
-    }
-  }
   .lg\:left-280 {
     @media (width >= 64rem) {
       left: calc(var(--spacing) * 280);
     }
   }
-  .lg\:left-310 {
-    @media (width >= 64rem) {
-      left: calc(var(--spacing) * 310);
-    }
-  }
-  .lg\:left-\[200px\] {
-    @media (width >= 64rem) {
-      left: 200px;
-    }
-  }
   .lg\:left-\[580px\] {
     @media (width >= 64rem) {
       left: 580px;
-    }
-  }
-  .lg\:left-\[600px\] {
-    @media (width >= 64rem) {
-      left: 600px;
     }
   }
   .lg\:left-\[650px\] {
@@ -1567,11 +1417,6 @@
   .lg\:ml-20 {
     @media (width >= 64rem) {
       margin-left: calc(var(--spacing) * 20);
-    }
-  }
-  .lg\:ml-26 {
-    @media (width >= 64rem) {
-      margin-left: calc(var(--spacing) * 26);
     }
   }
   .lg\:ml-47 {
@@ -1653,6 +1498,11 @@
   .lg\:w-\[400px\] {
     @media (width >= 64rem) {
       width: 400px;
+    }
+  }
+  .lg\:w-\[440px\] {
+    @media (width >= 64rem) {
+      width: 440px;
     }
   }
   .lg\:w-\[450px\] {

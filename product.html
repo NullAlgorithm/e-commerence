@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Page</title>
-</head>
-<body>
-     <!-- how to make custom breakpoint -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <!-- how to make custom breakpoint -->
   <!-- min-[400px]:bg-red-400 -->
   <body>
     <div id="size" class="fixed top-0 left-0"></div>
@@ -33,9 +33,9 @@
     <!------------------ top bar sign in -->
 
     <div
-      class="text-white text-xl bg-black h-8 flex justify-center items-center"
+      class="flex h-8 items-center justify-center bg-black text-xl text-white"
     >
-      <div class="flex text-[15px] justify-center align-middle">
+      <div class="flex justify-center align-middle text-[15px]">
         <span>Sign up and get 20% off to your order.</span>
         <a class="underline" href="Sing up now">Sign up now</a>
       </div>
@@ -43,14 +43,14 @@
 
     <!--------------- -----------niv bar --------->
 
-    <div class="mt-4 mb-6 flex  flex-row items-center lg:justify-center">
+    <div class="mt-4 mb-6 flex flex-row items-center lg:justify-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
         stroke-width="1.5"
         stroke="currentColor"
-        class="size-8 mr-4 ml-4 lg:hidden"
+        class="mr-4 ml-4 size-8 lg:hidden"
       >
         <path
           stroke-linecap="round"
@@ -59,8 +59,8 @@
         />
       </svg>
 
-      <div class=" cursor-pointer text-[30px] font-bold">SHOP.CO</div>
-      <div class="lg:flex lg:flex-row hidden">
+      <div class="cursor-pointer text-[30px] font-bold">SHOP.CO</div>
+      <div class="hidden lg:flex lg:flex-row">
         <button class="mr-2 ml-4 flex cursor-pointer">
           <div
             class="flex h-[40px] w-24 items-center justify-between rounded-4xl pl-[14px] text-[18px] hover:bg-gray-200"
@@ -102,10 +102,12 @@
 
       <!-- ---search bar----- -->
 
-      <div class="lg:ml-6 flex  flex-row md:justify-center ml-24 sm:ml-90 md:ml-8 ">
-        <div class="flex justify-center  items-center shadow-2xl ">
+      <div
+        class="ml-24 flex flex-row sm:ml-90 md:ml-8 md:justify-center lg:ml-6"
+      >
+        <div class="flex items-center justify-center shadow-2xl">
           <button
-            class="absolute lg:left-[650px] md:left-[240px]  cursor-pointer rounded-2xl p-[4px] hover:bg-gray-200"
+            class="absolute cursor-pointer rounded-2xl p-[4px] hover:bg-gray-200 md:left-[230px] lg:left-[580px]"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -117,19 +119,21 @@
               stroke-width="2"
               stroke-linecap="round"
               stroke-linejoin="round"
-              class="lucide lucide-search   md:size-5 lg:size-7 "
+              class="lucide lucide-search md:size-5 lg:size-7"
             >
               <circle cx="11" cy="11" r="8" />
               <path d="m21 21-4.3-4.3" />
             </svg>
           </button>
           <input
-            class="bg-[#f0f0f0] lg:w-[580px]  md:w-[500px] md:h-7 lg:h-11 rounded-4xl border-solid border-2  pl-12 hidden md:block  "
+            class="hidden rounded-4xl border-2 border-solid bg-[#f0f0f0] pl-12 md:block md:h-7 md:w-[500px] lg:h-11 lg:w-[580px]"
             type="text"
             placeholder="Search for product...."
           />
         </div>
-        <button class="ml-4 md:ml-2 p-2 rounded-2xl cursor-pointer hover:bg-gray-200">
+        <button
+          class="ml-4 cursor-pointer rounded-2xl p-2 hover:bg-gray-200 md:ml-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -140,7 +144,7 @@
             stroke-width="2"
             stroke-linecap="round"
             stroke-linejoin="round"
-            class="lucide lucide-shopping-cart "
+            class="lucide lucide-shopping-cart"
           >
             <circle cx="8" cy="21" r="1" />
             <circle cx="19" cy="21" r="1" />
@@ -149,7 +153,9 @@
             />
           </svg>
         </button>
-        <button class="md:ml-2 p-2 rounded-2xl cursor-pointer hover:bg-gray-200">
+        <button
+          class="cursor-pointer rounded-2xl p-2 hover:bg-gray-200 md:ml-2"
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -170,8 +176,7 @@
       </div>
     </div>
 
-    <!-- -------------------------------product detail -->
-     
-    
-</body>
+    <!------------------------ product -->
+    <h1>ff</h1>
+  </body>
 </html>
