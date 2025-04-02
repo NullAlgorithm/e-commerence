@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/output.css" />
-
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Document</title>
   </head>
   <body>
@@ -29,320 +29,322 @@
     </script>
     <br /><br />
 
-    <span class="mx-6 text-[22px] font-bold md:mx-20">YOUR CART</span>
-    <div class="mx-6 mt-4 mb-8 flex flex-col md:mx-20 lg:flex-row">
-      <div
-        class="h-auto w-full rounded-2xl border-2 border-[#f0f0f0] lg:w-[650px]"
-      >
+    <div>
+      <span class="mx-6 text-[22px] font-bold md:mx-20">YOUR CART</span>
+      <div class="mx-6 mt-4 mb-8 flex flex-col md:mx-20 lg:flex-row">
         <div
-          class="relative mx-4 mt-4 flex max-w-full border-b-2 border-[#f0f0f0] pb-4"
+          class="h-auto w-full rounded-2xl border-2 border-[#f0f0f0] lg:w-[650px]"
         >
-          <img
-            class="mr-3 h-25 w-25 rounded-[8px] lg:h-35 lg:w-35"
-            src="images/pants.png"
-            alt=""
-          />
-          <div class="mt-2 flex flex-col">
-            <span class="mb-1 text-[16px] font-bold lg:text-[22px]"
-              >Cotton jeans Pants</span
-            >
-            <span class="text-[12px] text-[#585757]"
-              >Size: <span>Large</span></span
-            >
-            <span class="text-[12px] text-[#585757]"
-              >Color: <span>Olive</span></span
-            >
-            <span class="mt- text-[16px] font-bold lg:mt-4 lg:text-[20px]"
-              >Rs1150</span
-            >
-          </div>
-
-          <button
-            class="absolute -right-0.5 mt-2 cursor-pointer p-1 hover:rounded-[9px] hover:bg-[#f0f0f0] lg:right-5"
+          <div
+            class="relative mx-4 mt-4 flex max-w-full border-b-2 border-[#f0f0f0] pb-4"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#a30505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-trash-2"
-            >
-              <path d="M3 6h18" />
-              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-              <line x1="10" x2="10" y1="11" y2="17" />
-              <line x1="14" x2="14" y1="11" y2="17" />
-            </svg>
-          </button>
-
-          <button
-            class="absolute top-18 right-1 flex h-8 w-20 items-center justify-between rounded-2xl bg-[#f0f0f0] p-1 lg:top-28 lg:right-6 lg:w-25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-minus"
-            >
-              <path d="M5 12h14" />
-            </svg>
-            1
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-plus"
-            >
-              <path d="M5 12h14" />
-              <path d="M12 5v14" />
-            </svg>
-          </button>
-        </div>
-
-        <div
-          class="relative mx-4 mt-4 flex max-w-full border-b-2 border-[#f0f0f0] pb-4"
-        >
-          <img
-            class="mr-3 h-25 w-25 rounded-[8px] lg:h-35 lg:w-35"
-            src="images/pants.png"
-            alt=""
-          />
-          <div class="mt-2 flex flex-col">
-            <span class="mb-1 text-[16px] font-bold lg:text-[22px]"
-              >Cotton jeans Pants</span
-            >
-            <span class="text-[12px] text-[#585757]"
-              >Size: <span>Large</span></span
-            >
-            <span class="text-[12px] text-[#585757]"
-              >Color: <span>Olive</span></span
-            >
-            <span class="mt- text-[16px] font-bold lg:mt-4 lg:text-[20px]"
-              >Rs1150</span
-            >
-          </div>
-
-          <button
-            class="absolute -right-0.5 mt-2 cursor-pointer p-1 hover:rounded-[9px] hover:bg-[#f0f0f0] lg:right-5"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#a30505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-trash-2"
-            >
-              <path d="M3 6h18" />
-              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-              <line x1="10" x2="10" y1="11" y2="17" />
-              <line x1="14" x2="14" y1="11" y2="17" />
-            </svg>
-          </button>
-
-          <button
-            class="absolute top-18 right-1 flex h-8 w-20 items-center justify-between rounded-2xl bg-[#f0f0f0] p-1 lg:top-28 lg:right-6 lg:w-25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-minus"
-            >
-              <path d="M5 12h14" />
-            </svg>
-            1
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-plus"
-            >
-              <path d="M5 12h14" />
-              <path d="M12 5v14" />
-            </svg>
-          </button>
-        </div>
-
-        <div class="relative mx-4 mt-4 flex max-w-full pb-4">
-          <img
-            class="mr-3 h-25 w-25 rounded-[8px] lg:h-35 lg:w-35"
-            src="images/pants.png"
-            alt=""
-          />
-          <div class="mt-2 flex flex-col">
-            <span class="mb-1 text-[16px] font-bold lg:text-[22px]"
-              >Cotton jeans Pants</span
-            >
-            <span class="text-[12px] text-[#585757]"
-              >Size: <span>Large</span></span
-            >
-            <span class="text-[12px] text-[#585757]"
-              >Color: <span>Olive</span></span
-            >
-            <span class="mt- text-[16px] font-bold lg:mt-4 lg:text-[20px]"
-              >Rs1150</span
-            >
-          </div>
-
-          <button
-            class="absolute -right-0.5 mt-2 cursor-pointer p-1 hover:rounded-[9px] hover:bg-[#f0f0f0] lg:right-5"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#a30505"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-trash-2"
-            >
-              <path d="M3 6h18" />
-              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
-              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
-              <line x1="10" x2="10" y1="11" y2="17" />
-              <line x1="14" x2="14" y1="11" y2="17" />
-            </svg>
-          </button>
-
-          <button
-            class="absolute top-18 right-1 flex h-8 w-20 items-center justify-between rounded-2xl bg-[#f0f0f0] p-1 lg:top-28 lg:right-6 lg:w-25"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-minus"
-            >
-              <path d="M5 12h14" />
-            </svg>
-            1
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-plus"
-            >
-              <path d="M5 12h14" />
-              <path d="M12 5v14" />
-            </svg>
-          </button>
-        </div>
-      </div>
-
-      <!-- ----------------------summary--------------------- -->
-
-      <div
-        class="mt-6 h-fit rounded-3xl border-2 border-[#f0f0f0] px-4 py-6 lg:mt-0 lg:ml-4 lg:w-[430px]"
-      >
-        <div class="mx-4 border-b-2 border-[#f0f0f0] pb-4 text-2xl font-bold">
-          Order Summary
-        </div>
-        <div
-          class="mx-4 flex min-w-fit flex-col justify-between border-b-2 border-[#f0f0f0] pb-4"
-        >
-          <div class="my-4 flex w-full justify-between">
-            <span class="text-[15px] text-[#706e6e]">SubTotal</span>
-            <span class="text-[18px] font-bold text-black">3585</span>
-          </div>
-
-          <div class="mb-4 flex w-full justify-between">
-            <span class="text-[15px] text-[#706e6e]">SubTotal</span>
-            <span class="text-[18px] font-bold text-black">3585</span>
-          </div>
-
-          <div class="flex w-full justify-between">
-            <span class="text-[15px] text-[#706e6e]">SubTotal</span>
-            <span class="text-[18px] font-bold text-black">3585</span>
-          </div>
-        </div>
-
-        <div class="mx-4">
-          <div class="mt-4 flex justify-between">
-            <span>Total</span>
-            <span class="text-[18px] font-bold">57575</span>
-          </div>
-          <div class="relative mt-4 flex">
-            <input
-              type="text"
-              placeholder="Add a promo code"
-              class="w-full rounded-4xl bg-[#f0f0f0] pl-8"
+            <img
+              class="mr-3 h-25 w-25 rounded-[8px] lg:h-35 lg:w-35"
+              src="images/pants.png"
+              alt=""
             />
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="#7d7878"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="lucide lucide-tag absolute top-3 left-2"
-            >
-              <path
-                d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"
-              />
-              <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
-            </svg>
+            <div class="mt-2 flex flex-col">
+              <span class="mb-1 text-[16px] font-bold lg:text-[22px]"
+                >Cotton jeans Pants</span
+              >
+              <span class="text-[12px] text-[#585757]"
+                >Size: <span>Large</span></span
+              >
+              <span class="text-[12px] text-[#585757]"
+                >Color: <span>Olive</span></span
+              >
+              <span class="mt- text-[16px] font-bold lg:mt-4 lg:text-[20px]"
+                >Rs1150</span
+              >
+            </div>
 
-            <button class="ml-2 h-10 w-25 rounded-4xl bg-black text-white">
-              Apply
+            <button
+              class="absolute -right-0.5 mt-2 cursor-pointer p-1 hover:rounded-[9px] hover:bg-[#f0f0f0] lg:right-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a30505"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-trash-2"
+              >
+                <path d="M3 6h18" />
+                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                <line x1="10" x2="10" y1="11" y2="17" />
+                <line x1="14" x2="14" y1="11" y2="17" />
+              </svg>
+            </button>
+
+            <button
+              class="absolute top-18 right-1 flex h-8 w-20 items-center justify-between rounded-2xl bg-[#f0f0f0] p-1 lg:top-28 lg:right-6 lg:w-25"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-minus"
+              >
+                <path d="M5 12h14" />
+              </svg>
+              1
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-plus"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5v14" />
+              </svg>
             </button>
           </div>
 
-          <button class="mt-6 h-10 w-full rounded-4xl bg-black text-white">
-            Apply
-          </button>
+          <div
+            class="relative mx-4 mt-4 flex max-w-full border-b-2 border-[#f0f0f0] pb-4"
+          >
+            <img
+              class="mr-3 h-25 w-25 rounded-[8px] lg:h-35 lg:w-35"
+              src="images/pants.png"
+              alt=""
+            />
+            <div class="mt-2 flex flex-col">
+              <span class="mb-1 text-[16px] font-bold lg:text-[22px]"
+                >Cotton jeans Pants</span
+              >
+              <span class="text-[12px] text-[#585757]"
+                >Size: <span>Large</span></span
+              >
+              <span class="text-[12px] text-[#585757]"
+                >Color: <span>Olive</span></span
+              >
+              <span class="mt- text-[16px] font-bold lg:mt-4 lg:text-[20px]"
+                >Rs1150</span
+              >
+            </div>
+
+            <button
+              class="absolute -right-0.5 mt-2 cursor-pointer p-1 hover:rounded-[9px] hover:bg-[#f0f0f0] lg:right-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a30505"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-trash-2"
+              >
+                <path d="M3 6h18" />
+                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                <line x1="10" x2="10" y1="11" y2="17" />
+                <line x1="14" x2="14" y1="11" y2="17" />
+              </svg>
+            </button>
+
+            <button
+              class="absolute top-18 right-1 flex h-8 w-20 items-center justify-between rounded-2xl bg-[#f0f0f0] p-1 lg:top-28 lg:right-6 lg:w-25"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-minus"
+              >
+                <path d="M5 12h14" />
+              </svg>
+              1
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-plus"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5v14" />
+              </svg>
+            </button>
+          </div>
+
+          <div class="relative mx-4 mt-4 flex max-w-full pb-4">
+            <img
+              class="mr-3 h-25 w-25 rounded-[8px] lg:h-35 lg:w-35"
+              src="images/pants.png"
+              alt=""
+            />
+            <div class="mt-2 flex flex-col">
+              <span class="mb-1 text-[16px] font-bold lg:text-[22px]"
+                >Cotton jeans Pants</span
+              >
+              <span class="text-[12px] text-[#585757]"
+                >Size: <span>Large</span></span
+              >
+              <span class="text-[12px] text-[#585757]"
+                >Color: <span>Olive</span></span
+              >
+              <span class="mt- text-[16px] font-bold lg:mt-4 lg:text-[20px]"
+                >Rs1150</span
+              >
+            </div>
+
+            <button
+              class="absolute -right-0.5 mt-2 cursor-pointer p-1 hover:rounded-[9px] hover:bg-[#f0f0f0] lg:right-5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#a30505"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-trash-2"
+              >
+                <path d="M3 6h18" />
+                <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                <line x1="10" x2="10" y1="11" y2="17" />
+                <line x1="14" x2="14" y1="11" y2="17" />
+              </svg>
+            </button>
+
+            <button
+              class="absolute top-18 right-1 flex h-8 w-20 items-center justify-between rounded-2xl bg-[#f0f0f0] p-1 lg:top-28 lg:right-6 lg:w-25"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-minus"
+              >
+                <path d="M5 12h14" />
+              </svg>
+              1
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-plus"
+              >
+                <path d="M5 12h14" />
+                <path d="M12 5v14" />
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- ----------------------summary--------------------- -->
+
+        <div
+          class="mt-6 h-fit rounded-3xl border-2 border-[#f0f0f0] px-4 py-6 lg:mt-0 lg:ml-4 lg:w-[430px]"
+        >
+          <div class="mx-4 border-b-2 border-[#f0f0f0] pb-4 text-2xl font-bold">
+            Order Summary
+          </div>
+          <div
+            class="mx-4 flex min-w-fit flex-col justify-between border-b-2 border-[#f0f0f0] pb-4"
+          >
+            <div class="my-4 flex w-full justify-between">
+              <span class="text-[15px] text-[#706e6e]">SubTotal</span>
+              <span class="text-[18px] font-bold text-black">3585</span>
+            </div>
+
+            <div class="mb-4 flex w-full justify-between">
+              <span class="text-[15px] text-[#706e6e]">SubTotal</span>
+              <span class="text-[18px] font-bold text-black">3585</span>
+            </div>
+
+            <div class="flex w-full justify-between">
+              <span class="text-[15px] text-[#706e6e]">SubTotal</span>
+              <span class="text-[18px] font-bold text-black">3585</span>
+            </div>
+          </div>
+
+          <div class="mx-4">
+            <div class="mt-4 flex justify-between">
+              <span>Total</span>
+              <span class="text-[18px] font-bold">57575</span>
+            </div>
+            <div class="relative mt-4 flex">
+              <input
+                type="text"
+                placeholder="Add a promo code"
+                class="w-full rounded-4xl bg-[#f0f0f0] pl-8"
+              />
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#7d7878"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-tag absolute top-3 left-2"
+              >
+                <path
+                  d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"
+                />
+                <circle cx="7.5" cy="7.5" r=".5" fill="currentColor" />
+              </svg>
+
+              <button class="ml-2 h-10 w-25 rounded-4xl bg-black text-white">
+                Apply
+              </button>
+            </div>
+
+            <button class="mt-6 h-10 w-full rounded-4xl bg-black text-white">
+              Apply
+            </button>
+          </div>
         </div>
       </div>
     </div>

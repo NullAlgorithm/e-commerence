@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
@@ -28,7 +29,7 @@
     </script>
     <br /><br />
 
-    <div class="mt-10 md:flex md:flex-row-reverse">
+    <div  class="mt-10 md:flex md:flex-row-reverse">
       <section class="mx-6 lg:mr-20 lg:ml-8">
         <div
           class="flex w-full flex-row items-baseline lg:items-center  md:justify-between"
@@ -376,8 +377,32 @@
             </div>
           </div>
         </div>
-  <!-- =---------------------------price section----- -->
-  <div class="border-b-2 border-[#f0f0f0] pb-8">
+     <!-- =---------------------------price section----- -->
+   <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    let pricelist = document.getElementById("pricelist");
+    let toggleButton = document.querySelector("#pricelist button");
+
+    // Set initial state
+    pricelist.style.maxHeight = "0px";
+    pricelist.style.overflow = "hidden"; // Prevents content overflow
+
+    function togglePrice() {
+      if (pricelist.style.maxHeight === "0px") {
+        pricelist.style.maxHeight = "300px"; // Expand
+      } else {
+        pricelist.style.maxHeight = "0px"; // Collapse
+      }
+    }
+
+    // Fix: Correctly select the button and attach event listener
+    toggleButton.addEventListener("click", togglePrice);
+  });
+</script>
+
+
+  <div  id="pricelist"
+          class="border-b-2 border-[#f0f0f0] pb-20 items-center">
           <div class="mt-4 flex flex-row justify-between items-center">
             <span class="font-bold">Price</span>
             <button class=" text-[#585757]">
@@ -391,17 +416,17 @@
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                class="lucide lucide-chevron-up"
+                class="lucide lucide-chevron-up cursor-pointer"
               >
                 <path d="m18 15-6-6-6 6" />
               </svg>
             </button>
           </div>
-          <input type="range" class="mt-6 mr-6  w-full" />
+          <input type="range" class="mt-6 mr-6  w-full"  />
         </div>
 
   <!-- ---------------color section -->
-  <div class="border-b-2 border-[#f0f0f0] pb-8">
+  <div class="border-b-2 border-[#f0f0f0]  pb-8">
           <div class="mt-5 flex flex-row justify-between items-center">
             <span class="font-bold">Color</span>
             <button class=" text-[#585757]">
@@ -600,5 +625,7 @@
       </div>
     </section>
     </div>
+
+    
   </body>
 </html>
