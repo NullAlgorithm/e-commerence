@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link rel="stylesheet" href="src/output.css" />
   </head>
   <body>
@@ -29,7 +29,7 @@
     </script>
     <br /><br />
 
-    <div  class="mt-10 md:flex md:flex-row-reverse">
+    <div  class="my-10 md:flex md:flex-row-reverse">
       <section class="mx-6 lg:mr-20 lg:ml-8">
         <div
           class="flex w-full flex-row items-baseline lg:items-center  md:justify-between"
@@ -243,7 +243,7 @@
 
       <!-- ---------------------------filter -->
 
-      <section class=" h-[1150px] w-full sm:w-[395px] sm:h-full md:w-[295px] md:h-[1150px] rounded-t-[20px]  lg:rounded-2xl border-2 border-[#f0f0f0] px-4 lg:ml-20 ">
+      <section class=" min-h-fit w-full sm:w-[395px] sm:h-full md:w-[295px] md:h-[1150px] rounded-t-[20px]  lg:rounded-2xl border-2 border-[#f0f0f0] px-4 lg:ml-20 ">
         <div class="">
           <div class="flex items-center justify-between border-b-2 border-[#f0f0f0] pt-2 pb-4">
             <span class="font-semibold">Filter</span>
@@ -378,7 +378,7 @@
           </div>
         </div>
      <!-- =---------------------------price section----- -->
-   <script>
+   <!-- <script>
   document.addEventListener("DOMContentLoaded", function () {
     let pricelist = document.getElementById("pricelist");
     let toggleButton = document.querySelector("#pricelist button");
@@ -398,6 +398,14 @@
     // Fix: Correctly select the button and attach event listener
     toggleButton.addEventListener("click", togglePrice);
   });
+</script> -->
+<script>
+  document.getElementById('toggleButton').onclick = function() {
+  const priceRange = document.getElementById('priceRange');
+  priceRange.classList.toggle('hidden'); // Toggle visibility with Tailwind
+  // If not using Tailwind, use: 
+  // priceRange.style.display = priceRange.style.display === 'none' ? 'block' : 'none';
+};
 </script>
 
 
@@ -405,7 +413,7 @@
           class="border-b-2 border-[#f0f0f0] pb-20 items-center">
           <div class="mt-4 flex flex-row justify-between items-center">
             <span class="font-bold">Price</span>
-            <button class=" text-[#585757]">
+            <button id="toggleButton" class=" text-[#585757]">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -422,7 +430,7 @@
               </svg>
             </button>
           </div>
-          <input type="range" class="mt-6 mr-6  w-full"  />
+          <input type="range" id="priceRange" class="mt-6 mr-6  w-full"  />
         </div>
 
   <!-- ---------------color section -->
@@ -619,7 +627,7 @@
             </button>
           </div>
         </div>
-        <button class="w-full border-2 border-[#0000001A] rounded-3xl h-10 cursor-pointer hover:bg-black hover:text-white ">
+        <button class="w-full mb-4 border-2 border-[#0000001A] rounded-3xl h-10 cursor-pointer hover:bg-black hover:text-white ">
           Apply filter
         </button>
       </div>
